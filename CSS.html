@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>     
+    table { border-collapse: collapse; }     
+    .selected { background-color: blue; } 
+    /* The added code to solve the Question , we use hover with excluding the selected tr using :not  */
+    tr:hover:not(.selected) {
+          background-color:red;
+        }
+    /* Enhancement on tr and td */    
+    tr, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    }
+    </style> 
+</script>
+</head>
+
+    <body>     
+        <table>        
+             <tbody>       
+                    <tr>     
+                        <td>1</td>        
+                        <td>2</td> 
+                        <td>3</td>             
+                    </tr>             
+                    <tr class="selected">                
+                        <td>4</td>            
+                        <td>5</td>                 
+                        <td>6</td>             
+                    </tr>             
+                    <tr>                 
+                        <td>7</td>                
+                        <td>8</td>            
+                        <td>9</td>          
+                    </tr>       
+            </tbody>     
+        </table>
+     </body> 
+
+</html>
